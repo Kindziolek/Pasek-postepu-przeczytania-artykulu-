@@ -11,7 +11,7 @@ progress.className = "progress";
 progressInner.className = "progress__inner";
 
 progress.append(progressInner);
-document.querySelector.prepend(progress);
+document.body.prepend(progress);
 
 window.addEventListener("scroll", () => {
     console.log('Przewijam');
