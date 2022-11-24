@@ -16,6 +16,8 @@ progress.append(progressInner);
 document.body.prepend(progress);
 
 window.addEventListener("scroll", () => {
-    const height = html.scrollHeight;
+    const height = html.scrollHeight - window.innerHeight;
     const scrolled = html.scrollTop / height * 100;
-})
+
+    progressInner.style.width.width = `${scrolled}%`;
+});
